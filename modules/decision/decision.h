@@ -18,6 +18,7 @@
 #define MODULES_DECISION_DECISION_H_
 
 #include <string>
+
 #include "ros/include/ros/ros.h"
 
 #include "modules/common/apollo_app.h"
@@ -39,7 +40,7 @@ class Decision : public apollo::common::ApolloApp {
   virtual ~Decision() = default;
 
  private:
-  void OnTimer(const ros::TimerEvent& event);
+  void OnTimer(const ros::TimerEvent &event);
   void PublishDecision();
 
  private:

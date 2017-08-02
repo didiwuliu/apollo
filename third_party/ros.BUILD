@@ -6,8 +6,8 @@ cc_library(
     name = "ros_common",
     srcs = [
         "lib/libcpp_common.so",
-        "lib/libfastcdr.so.1",
-        "lib/libfastrtps.so.1",
+        "lib/libfastcdr.so",
+        "lib/libfastrtps.so",
         "lib/librosconsole.so",
         "lib/librosconsole_backend_interface.so",
         "lib/librosconsole_print.so",
@@ -15,6 +15,7 @@ cc_library(
         "lib/libroscpp_serialization.so",
         "lib/librostime.so",
         "lib/libxmlrpcpp.so",
+        "lib/librosconsole_log4cxx.so",
     ],
     hdrs = glob([
         "include/*/*.h",
